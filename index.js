@@ -1,4 +1,5 @@
 import { createElement } from "./step1.js";
+import { render } from "./step2.js";
 
 const element = createElement(
   "div",
@@ -8,5 +9,5 @@ const element = createElement(
 );
 
 const container = document.getElementById("root");
-console.log(element);
-// ReactDOM.render(element, container);
+
+render(element, container);
